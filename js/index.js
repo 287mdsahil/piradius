@@ -1,4 +1,4 @@
-/*function getContent(fragmentId){
+function getContent(fragmentId, callback){
 	var request =new XMLHttpRequest();
 
 	request.onload=function(){
@@ -7,10 +7,9 @@
 	request.open("GET",fragmentId + ".html");
 	request.send(null);
 }
-
 function setActiveLink(fragmentId){
-	var navbarDiv=document.getElementById("navbar"),
-	links=navbarDiv.children,
+	var navbarDiv=document.getElementById("navbar1"),
+	links = navbarDiv.children,
 	i,link,pageName;
 	for(i = 0; i < links.length; i++){
     	link = links[i];
@@ -38,4 +37,3 @@ if(!location.hash)
 }
 navigate();
 window.addEventListener("hashchange", navigate);
-*/
