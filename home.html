@@ -6,7 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Piradius</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Raleway|ZCOOL+QingKe+HuangYou"
+        rel="stylesheet">
+    <!--
+        font-family: 'Gloria Hallelujah', cursive;
+        font-family: 'Amatic SC', cursive;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+    -->
     <style>
+        html {
+            scroll-behavior: smooth; 
+        }
         :root {
             /* Main Primary color */
             --primary-0: rgba(82, 174, 191, 1);
@@ -42,7 +53,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-family: 'Raleway', sans-serif;
         }
 
         #navbar {
@@ -98,9 +109,9 @@
         }
 
         /*content specific css*/
-        #content>#rrb-je_ssc-je {
-            background-image: url('./img/aman-bhargava-459795-unsplash.jpg');
-            height: 500px;
+        #content>.course {
+            min-height: 500px;
+            height: fit-content;
             padding: 50px;
             background-attachment: fixed;
             background-position: center;
@@ -110,17 +121,17 @@
             flex-direction: column;
         }
 
-        #content>#rrb-je_ssc-je>* {
+        #content>.course>* {
             margin-left: auto;
             margin-right: auto;
         }
 
-        #content>#rrb-je_ssc-je>.text {
+        #content>.course>.text {
             color: white;
             text-align: center;
         }
 
-        #content>#rrb-je_ssc-je>#enroll-btn {
+        #content>.course>.enroll-btn {
             background-color: whitesmoke;
             padding: 10px;
             margin-top: auto;
@@ -131,14 +142,26 @@
             border-radius: 10px;
             cursor: pointer;
             user-select: none;
+            text-align: center;
+            white-space: nowrap;
         }
 
-        #content>#rrb-je_ssc-je>#enroll-btn:hover {
+        #content>.course>.enroll-btn:hover {
             color: var(--primary-0);
         }
 
-        #content>#rrb-je_ssc-je>#enroll-btn:active {
+        #content>.course>.enroll-btn:active {
             color: var(--primary-1);
+        }
+
+        #content>.quote {
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            background-color: whitesmoke;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 20px;
+            color: var(--font-color);
         }
     </style>
 </head>
@@ -157,12 +180,25 @@
     </div>
 
     <div id="content">
-        <div id="rrb-je_ssc-je">
+        <div class="course" style="background-image: url('./img/aman-bhargava-459795-unsplash.jpg');">
             <div class="text">
                 <span style="font-size:100px;">RRB-JE & SSC-JE</span><br>
                 <span style="font-size:50px;">Classroom courses and Test-series</span><br>
             </div>
-            <div id="enroll-btn">Enroll now</div>
+            <div class="enroll-btn">Enroll now</div>
+        </div>
+        <div class="quote">
+            "Your hardwork is a measure of your success"
+        </div>
+        <div class="course" style="background-image: url('./img/nikhita-s-615116-unsplash.jpg');">
+            <div class="text">
+                <span style="font-size:100px;">BOARD EXAMS</span><br>
+                <span style="font-size:50px;">Classroom courses <br>and<br>mock tests (online & offline)</span><br>
+            </div>
+            <div class="enroll-btn">Enroll now</div>
+        </div>
+        <div class="quote">
+            "Give me a place to stand and I will move the earth"
         </div>
     </div>
 </body>
