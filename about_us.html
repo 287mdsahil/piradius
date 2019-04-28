@@ -127,17 +127,31 @@
         }
 
         /*content specific css*/
-        #content>#about-text , dl {
+        #about-text,
+        #content>dl {
             padding: 50px;
             color: var(--primary-0);
             letter-spacing: 0.02em;
             line-height: 1.7em;
-            font: normal normal normal 17px/1.4em 'Raleway',sans-serif;
+            font: normal normal normal 17px/1.4em 'Raleway', sans-serif;
         }
+
         dt {
             padding: 20px;
             letter-spacing: 0.1em;
             color: var(--font-color);
+        }
+
+        #about_us_text {
+            background: url("./img/claudia-587578-unsplash.jpg");
+            background-attachment: fixed;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size:contain;
+        }
+
+        #about_us_text>p {
+            background-color: white;
         }
     </style>
 </head>
@@ -155,47 +169,56 @@
         </ul>
     </div>
     <div id="content">
-        <p id="about-text">
-            ∏-Radius is a group of Ph.D scholars ,teachers,doctors, engineers and students from JADAVPUR UNIVERSITY and
-            Govt. Medical colleges (CMC,NRS,SSKM etc.).∏-Radius is established with a prime motto of bestowing quality
-            education and willing the student to crack competitive examinations and pen their basic board results.Radius
-            has become the dwelling house for the students who aspire to be the part of the memorize family of students
-            and for those who feed the dream of joining prestigious institute through competitive exams. ∏-Radius wants
-            to construct a foot-bridge between the recently successful and the upcoming students.
-        </p>
+        <div id="about_us_text">
+            <!--img src="./img/claudia-587578-unsplash.jpg" style="width: 400px;float: right; margin: 30px 10% 10px 10px"-->
+            <p id="about-text" style="max-width: 800px;">
+                ∏-Radius is a group of Ph.D scholars ,teachers,doctors, engineers and students from JADAVPUR UNIVERSITY
+                and
+                Govt. Medical colleges (CMC,NRS,SSKM etc.).∏-Radius is established with a prime motto of bestowing
+                quality
+                education and willing the student to crack competitive examinations and pen their basic board
+                results.Radius
+                has become the dwelling house for the students who aspire to be the part of the memorize family of
+                students
+                and for those who feed the dream of joining prestigious institute through competitive exams. ∏-Radius
+                wants
+                to construct a foot-bridge between the recently successful and the upcoming students.
+            </p>
+        </div>
 
+    
         <dl>
             <dt>Vison</dt>
-            <dd>Piradius is the result oriented and pioneer 
-                institute to prepare the aspirants for each 
-                and every stage of learning by developing academic 
-                base and mould their career in the right way with 
+            <dd>Piradius is the result oriented and pioneer
+                institute to prepare the aspirants for each
+                and every stage of learning by developing academic
+                base and mould their career in the right way with
                 quality teaching, individual attenction and care.
                 <br>
-                It focuses on providing a holistic and interactive 
-                leaning experience to the aspirants. Thus we aim to 
+                It focuses on providing a holistic and interactive
+                leaning experience to the aspirants. Thus we aim to
                 motivate, guite and mentoring our students in their success.
             </dd>
             <dt>Quality teaching</dt>
             <dd>
-                The institute endeavours to create a conducive and qualitative learning environment 
-                infrastructure with active students particapation. We have treasury consisting of Professors, 
+                The institute endeavours to create a conducive and qualitative learning environment
+                infrastructure with active students particapation. We have treasury consisting of Professors,
                 experience Teachers, Research scholars, Doctors and Engineering students.
             </dd>
             <dt>Classroom coaching</dt>
             <dd>
-                Our classroom programme provides in depth coverage of syllabus of Board, IIT-JEE and 
-                various medical entrance exams. We actually focus on conceptual growing 
+                Our classroom programme provides in depth coverage of syllabus of Board, IIT-JEE and
+                various medical entrance exams. We actually focus on conceptual growing
                 of theories and problem solving skills. We also provide doubt clearing classes for our students.
             </dd>
             <dt>Well designed study material</dt>
             <dd>
-                Piradius provides to its students discretly designed study materials that offer the students 
+                Piradius provides to its students discretly designed study materials that offer the students
                 conceptual clarity and also easy representation.
             </dd>
             <dt>Test series</dt>
             <dd>
-                Updated online and offline test series are available for all our students with higly effective and 
+                Updated online and offline test series are available for all our students with higly effective and
                 conceptual questions for the various kind of examinations.
             </dd>
         </dl>
