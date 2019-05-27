@@ -126,6 +126,43 @@
             color: var(--primary-0);
         }
 
+        footer {
+            padding: 90px 0px 120px;
+            background-color: #000000;
+            color: #9B9B9B;
+
+            /*display: flex;*/
+        }
+
+        #footer_nav {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1170px;
+            width: 90%;
+            height: fit-content;
+            /*display: flex;
+            flex-flow: row-reverse;*/
+        }
+
+        #footer_nav::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        #footer_nav>section {
+            margin: 10px;
+            padding: 5px;
+            height: fit-content;
+            float: left;
+            line-height: 5px;
+        }
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+        }
+
         /*content specific css*/
         #content>.course {
             min-height: 500px;
@@ -241,6 +278,99 @@
             "Don't let what you cannot do interfere with what you can do"<br>John Wooden
         </div>
     </div>
+
+    <footer>
+        <nav id="footer_nav">
+
+            <section>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 192 192"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,192v-192h192v192z" fill="none"></path>
+                        <g fill="#cccccc">
+                            <g id="surface1">
+                                <path
+                                    d="M28,36v14.40625c0.40625,52.79687 68.40625,113.1875 113.59375,113.59375h14.8125c4,0 7.59375,-3.20312 7.59375,-7.59375v-28.40625c0,-4 -3.59375,-7.59375 -7.59375,-7.59375l-32.40625,-0.40625l-16.40625,17.20312c-10.39063,0 -52.39063,-42 -52.79688,-52.79687l17.20312,-16.40625v-32.40625c0,-4 -4,-7.59375 -8,-7.59375h-28.40625c-4.39063,0 -7.59375,4 -7.59375,8">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <h1>Phone</h1>
+                <p>1234567890</p>
+            </section>
+
+            <section>
+                <a href="mailto:123@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 192 192"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,192v-192h192v192z" fill="none"></path>
+                            <g fill="#cccccc">
+                                <g id="surface1">
+                                    <path
+                                        d="M0,26.88v138.24h192v-138.24zM7.68,34.56h176.64v9.6c-1.5,1.305 -68.835,60.045 -75.12,65.52l-0.36,0.36c-4.98,4.335 -10.08,5.16 -12.84,5.16c-2.745,0 -7.86,-0.825 -12.84,-5.16c-1.425,-1.245 -11.685,-10.11 -19.08,-16.56c-21.945,-19.14 -55.275,-48.33 -56.4,-49.32zM7.68,54.36c6.66,5.805 30.285,26.37 50.4,43.92l-50.4,39.84zM184.32,54.36v83.76l-50.4,-39.84c20.115,-17.55 43.74,-38.115 50.4,-43.92zM63.96,103.44c4.665,4.065 13.095,11.43 14.16,12.36l0.12,0.12c6.495,5.58 13.395,6.96 17.76,6.96c4.395,0 11.355,-1.395 17.88,-7.08c1.08,-0.93 9.57,-8.25 14.28,-12.36l56.16,44.4v9.6h-176.64v-9.6z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <h1>Email</h1>
+                <p>123@gmail.com</p>
+            </section>
+
+            <section>
+                <a href="http://facebook.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 192 192"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,192v-192h192v192z" fill="none"></path>
+                            <g fill="#cccccc">
+                                <path
+                                    d="M96,11.52c-46.656,0 -84.48,37.824 -84.48,84.48c0,42.3552 31.2,77.32608 71.85408,83.43552v-61.04448h-20.90112v-22.20672h20.90112v-14.77632c0,-24.46464 11.91936,-35.20512 32.25216,-35.20512c9.73824,0 14.88768,0.72192 17.32608,1.05216v19.38432h-13.87008c-8.63232,0 -11.64672,8.18304 -11.64672,17.40672v12.13824h25.29792l-3.43296,22.20672h-21.86496v61.22496c41.23392,-5.59488 73.04448,-40.84992 73.04448,-83.616c0,-46.656 -37.824,-84.48 -84.48,-84.48z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <h1>Facebook</h1>
+            </section>
+
+            <section>
+                <a href="http://www.youtube.com">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 192 192"
+                    style=" fill:#000000;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,192v-192h192v192z" fill="none"></path>
+                        <g fill="#cccccc">
+                            <g id="surface1">
+                                <path
+                                    d="M172.41,55.68c-1.53,-8.445 -8.82,-14.595 -17.28,-16.515c-12.66,-2.685 -36.09,-4.605 -61.44,-4.605c-25.335,0 -49.14,1.92 -61.815,4.605c-8.445,1.92 -15.75,7.68 -17.28,16.515c-1.545,9.6 -3.075,23.04 -3.075,40.32c0,17.28 1.53,30.72 3.45,40.32c1.545,8.445 8.835,14.595 17.28,16.515c13.44,2.685 36.48,4.605 61.83,4.605c25.35,0 48.39,-1.92 61.83,-4.605c8.445,-1.92 15.735,-7.68 17.28,-16.515c1.53,-9.6 3.45,-23.43 3.84,-40.32c-0.78,-17.28 -2.7,-30.72 -4.62,-40.32zM72.96,122.88v-53.76l46.845,26.88z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+                <h1>Youtube</h1>
+                <p>channel</p>
+            </section>
+
+            </div>
+    </footer>
 </body>
 
 </html>
