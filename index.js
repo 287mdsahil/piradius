@@ -24,3 +24,7 @@ function getAboutUsPage() {
 function getFacultyPage() {
     getPage('./faculty-partial.html')
 }
+
+function getCoursePage() {
+    getPage('./course-partial.html');
+}
