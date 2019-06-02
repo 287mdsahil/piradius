@@ -14,6 +14,13 @@ function getPage(contenturl) {
 }
 
 function getHomePage() {
-    getPage('./home-partia.html')
+    getPage('./home-partial.html')
 }
 
+function getAboutUsPage() {
+    getPage('./about_us-partial.html')
+}
+
+function getFacultyPage() {
+    getPage('./faculty-partial.html')
+}
