@@ -50,6 +50,9 @@
             --complement-4: rgba(238, 134, 34, 1);
 
             --font-color: rgb(80, 80, 80);
+            --very-large-font: 100px;
+            --large-font: 50px;
+            --normal-font: 20px;
         }
 
         body {
@@ -220,13 +223,30 @@
             text-decoration: none;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 800px) {
             #navbar {
                 display: flex;
                 flex-direction: column;
             }
-        }
 
+            :root {
+                --very-large-font: 50px;
+                --large-font: 20px;
+                --normal-font:15px;
+            }
+        }
+        @media (min-width: 801px) {
+            #navbar {
+                display: flex;
+                flex-direction: column;
+            }
+
+            :root {
+                --very-large-font: 100px;
+                --large-font: 50px;
+                --normal-font:20px;
+            }
+        }
         /*content specific css*/
     </style>
     <script src="./index.js"></script>
