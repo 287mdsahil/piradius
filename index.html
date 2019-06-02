@@ -232,25 +232,36 @@
             :root {
                 --very-large-font: 50px;
                 --large-font: 20px;
-                --normal-font:15px;
+                --normal-font: 15px;
             }
 
             #footer_nav>section {
                 float: none;
             }
-        }
-        @media (min-width: 801px) {
+
             #navbar {
                 display: flex;
                 flex-direction: column;
             }
 
+            #navbar>ul {
+                margin-right: auto;
+            }
+
+            #navbar>ul>li {
+                display: block;
+                padding-inline-start: 0;
+            }
+        }
+
+        @media (min-width: 801px) {
             :root {
                 --very-large-font: 100px;
                 --large-font: 50px;
-                --normal-font:20px;
+                --normal-font: 20px;
             }
         }
+
         /*content specific css*/
     </style>
     <script src="./index.js"></script>
