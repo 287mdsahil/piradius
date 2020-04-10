@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 class student {
 
 	// Personal details
@@ -19,3 +21,6 @@ class student {
 	// Course info	
 	
 }
+
+
+echo "check";
