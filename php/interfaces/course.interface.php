@@ -2,8 +2,9 @@
 
 declare(strict_types = 1);
 
-interface course {
+interface Course {
 
 	public function getCourseId();
+	public function getCourseName();
 
 }
