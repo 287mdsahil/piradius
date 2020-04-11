@@ -43,6 +43,25 @@
         margin: 5px 0 22px 0;
     }
 
+    .register {
+        width: 100%;
+        padding: 15px;
+        margin: 10px;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .registerbtn {
+        width: 50%;
+        cursor: pointer;
+        opacity: 0.7;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .registerbtn:hover {
+        opacity:1;
+    }
     .inner-card>input:hover {
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     }
@@ -89,5 +108,34 @@
 
     <div class="card inner-card">
         <h3>Academic Information</h3>
+    </div>
+
+    <div class="card inner-card">
+        <h3>Course Details</h3>
+        <hr>
+        <label for="course"><b>Select the course</b></label>
+        <select name="course" required>
+            <optgroup label="ABC Level">
+                <option value="ABC Boards">Board Basic</option>
+                <option value="ABC IIT">IIT Seeker</option>
+                <option value="ABC Medical">Medical Aspirants</option>
+            </optgroup>
+            <optgroup label="Transit Level">
+                <option value="Transit Boards">Board Basic</option>
+                <option value="Transit IIT">IIT Seeker</option>
+                <option value="Transit Medical">Medical Aspirants</option>
+            </optgroup>
+            <optgroup label="Grade Level">
+                <option value="Diploma">Diploma Engineering</option>
+                <option value="Degree">Degree Engineering</option>
+                <option value="Target Job">Target Job</option>
+            </optgroup>
+            <optgroup>
+                <option value="Squash">Squash</option>
+            </optgroup>           
+        </select>
+    </div>
+    <div class="register">
+        <button type="Submit" class="registerbtn">Submit</button>
     </div>
 </div>
