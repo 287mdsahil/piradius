@@ -28,7 +28,3 @@ function getFacultyPage() {
 function getCoursePage() {
     getPage('./course-partial.html');
 }
-
-function getRegistrationPage() {
-    getPage('./registration.html')
-}
