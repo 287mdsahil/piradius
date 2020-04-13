@@ -59,6 +59,12 @@
             margin: 5px 0 22px 0;
         }
 
+        .inner-card>select {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+        }
+
         .register {
             width: 100%;
             padding: 15px;
@@ -180,6 +186,18 @@
 
                 <div class="card inner-card">
                     <h3>Academic Information</h3>
+                    <hr>
+                    <label for="qualifications"><b>Most recent Qualification</b></label>
+                    <select name="qualifications" required>
+                        <option value="10th">10<sup>th</sup> Boards Examination</option>
+                        <option value="12th">12<sup>th</sup> Boards Examination</option>
+                        <option value="Graduate">Graduate</option>
+                        <option value="Post-Graduate">Post-Graduate</option>
+                        <option value="None">None of the above</option>
+                    </select>
+
+                    <label for="Marks"><b>Grades achieved</b> (in % or GPA)</label>
+                    <input type="text" name="marks" required>
                 </div>
 
                 <div class="card inner-card">
