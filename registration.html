@@ -149,6 +149,17 @@
                 }
         }
     </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded",function() {
+            var course = location.search.substring(1);
+            console.log('OK');
+            if(course !== "") {
+                console.log('OK');
+                document.getElementById('courseDetails').value = course;
+            }
+        });
+    </script>
 </head>
 <body>
     <img id="navbar-logo" src="./img/logo.png">
@@ -204,21 +215,21 @@
                     <h3>Course Details</h3>
                     <hr>
                     <label for="course"><b>Select the course</b></label>
-                    <select name="course" required>
+                    <select id="courseDetails" name="course" required>
                         <optgroup label="ABC Level">
-                            <option value="ABC Boards">Board Basic</option>
-                            <option value="ABC IIT">IIT Seeker</option>
-                            <option value="ABC Medical">Medical Aspirants</option>
+                            <option value="ABC_Boards">Board Basic</option>
+                            <option value="ABC_IIT">IIT Seeker</option>
+                            <option value="ABC_Medical">Medical Aspirants</option>
                         </optgroup>
                         <optgroup label="Transit Level">
-                            <option value="Transit Boards">Board Basic</option>
-                            <option value="Transit IIT">IIT Seeker</option>
-                            <option value="Transit Medical">Medical Aspirants</option>
+                            <option value="Transit_Boards">Board Basic</option>
+                            <option value="Transit_IIT">IIT Seeker</option>
+                            <option value="Transit_Medical">Medical Aspirants</option>
                         </optgroup>
                         <optgroup label="Grade Level">
                             <option value="Diploma">Diploma Engineering</option>
                             <option value="Degree">Degree Engineering</option>
-                            <option value="Target Job">Target Job</option>
+                            <option value="Target_Job">Target Job</option>
                         </optgroup>
                         <optgroup>
                             <option value="Squash">Squash</option>

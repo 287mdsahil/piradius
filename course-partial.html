@@ -19,31 +19,8 @@
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
-    /* .row {
-        display: flex;
-    }
-
-    .column {
-        text-align: center;
-        vertical-align: middle;
-        flex: 33.33%;
-        padding: 5px;
-    } */
-
-    .container {
-        position: relative;
-        text-align: center;
-    }
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: ;
-        text-shadow: whitesmoke;
-    }
-
     .inner-card {
+        border-radius: 10px 10px;
         margin: 10px;
         margin-top: 30px;
         
@@ -58,10 +35,6 @@
         flex-flow: row;
     }
 
-    .inner-card>img {
-        border-radius: 30px 0 0 10px;
-    }
-
     body {
         background: url('./img/tim-mossholder-1235721-unsplash.jpg');
         background-attachment: fixed;
@@ -69,7 +42,7 @@
     }
 
     .wrap-collabsible {
-        border-radius: 30px 10px;
+        border-radius: 10px 10px;
         margin-bottom: 1.2rem 0;
     }
 
@@ -79,11 +52,11 @@
 
     .lbl-toggle {
         font-weight: bolder;
-        border-radius: 30px 10px 10px 0;
+        border-radius: 10px 10px 10px 0;
         padding: 10px;
         display: block;
         cursor: pointer;
-        transition: all 0.25s ease-out;
+        transition: all 0.2s ease-out;
     }
 /* 
     .lbl-toggle:hover {
@@ -117,7 +90,7 @@
         padding: 0;
         max-height: 0px;
         overflow: hidden;
-        transition: max-height .25s ease-in-out;
+        transition: max-height 1s linear;
     }
 
     .toggle:checked + .lbl-toggle + .collapsible-content {
@@ -136,10 +109,7 @@
 </style>
 
 <div class="card">
-    <div class="container">
-        <img src="img/banter-snaps-12845-unsplash.jpg" alt="Snow">
-        <div class="centered"><h2>ABC Level</h2></div>
-    </div>
+    <h3>ABC Level</h2>
     <div class="card inner-card">
         <div class="wrap-collapsible">
             <input id="collapsible" class="toggle" type="checkbox">
@@ -148,7 +118,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?ABC_Boards" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -162,7 +132,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?ABC_IIT" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -177,7 +147,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?ABC_Medical" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -195,7 +165,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?Transit_Boards" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -209,7 +179,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?Transit_IIT" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -224,7 +194,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?Transit_Medical" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -241,7 +211,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?Diploma" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -255,7 +225,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?Degree" target="_blank">Register</a>
                 </div>
             </div>
         </div>
@@ -270,7 +240,7 @@
                 <div class="content-inner">
                     more info regarding the course
                     <hr>
-                    <a href="./registration.html" target="_blank">Register</a>
+                    <a href="./registration.html?Target_Job" target="_blank">Register</a>
                 </div>
             </div>
         </div>
