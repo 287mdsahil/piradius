@@ -3,7 +3,7 @@
         margin: 50px;
         max-width: 1000px;
         min-height: 50px;
-        width: 70%;
+        width: 75%;
         background-color: whitesmoke;
         box-align: center;
         margin-right: auto;
@@ -29,12 +29,9 @@
         background: white;
         color: var(--font-color);
         padding: 0;
+        outline: none;
         display: flex;
         flex-flow: row;
-    }
-
-    .inner-card>h4 {
-        padding: 10px;
     }
 
     .inner-card>img {
@@ -46,57 +43,193 @@
         background-attachment: fixed;
         background-size: cover;
     }
+
+    .wrap-collabsible {
+        border-radius: 30px 10px;
+        margin-bottom: 1.2rem 0;
+    }
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .lbl-toggle {
+        font-weight: bolder;
+        border-radius: 30px 10px 10px 0;
+        padding: 10px;
+        display: block;
+        cursor: pointer;
+        transition: all 0.25s ease-out;
+    }
+/* 
+    .lbl-toggle:hover {
+        background-color: #eee;
+    } */
+
+    .lbl-toggle::before {
+        content: ' ';
+        display: inline-block;
+
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid currentColor;
+
+        vertical-align: middle;
+        margin-right: .7rem;
+        transform: translateY(-2px);
+        transition: transform .2s ease-out;
+    }
+
+    .collapsible-content .content-inner {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        padding: .5rem 1rem;
+    }
+
+    .collapsible-content {
+        border-radius: 30px 10px;
+        background: white;
+        color: var(--font-color);
+        padding: 0;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height .25s ease-in-out;
+    }
+
+    .toggle:checked + .lbl-toggle + .collapsible-content {
+        max-height: 100vh;
+    }
+
+    .toggle:checked + .lbl-toggle::before {
+        transform: rotate(90deg) translateX(-3px);
+    }
+
+    /* .toggle:checked + .lbl-toggle {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    } */
+
 </style>
 
 <div class="card">
     <h3>ABC Level</h3>
     <div class="card inner-card">
         <img src="img/banter-snaps-12845-unsplash.jpg" alt="">
-        <h4>Board Basic</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible" class="toggle" type="checkbox">
+            <label for="collapsible" class="lbl-toggle">Board Basic</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 
     <div class="card inner-card">
-        <h4>IIT Seeker</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible2" class="toggle" type="checkbox">
+            <label for="collapsible2" class="lbl-toggle">IIT Seeker</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 
 
     <div class="card inner-card">
-        <h4>Medical Aspirants</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible3" class="toggle" type="checkbox">
+            <label for="collapsible3" class="lbl-toggle">Medical Aspirants</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="card">
     <h3>Transit Level</h3>
+    
     <div class="card inner-card">
-        <h4>Board Basic</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible4" class="toggle" type="checkbox">
+            <label for="collapsible4" class="lbl-toggle">Board Basic</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 
     <div class="card inner-card">
-        <h4>IIT Seeker</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible5" class="toggle" type="checkbox">
+            <label for="collapsible5" class="lbl-toggle">IIT Seeker</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 
 
     <div class="card inner-card">
-        <h4>Medical Aspirants</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible6" class="toggle" type="checkbox">
+            <label for="collapsible6" class="lbl-toggle">Medical Aspirants</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="card">
     <h3>Grade Up Level</h3>
     <div class="card inner-card">
-        <h4>Diploma Engineering</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible7" class="toggle" type="checkbox">
+            <label for="collapsible7" class="lbl-toggle">Diploma Engineering</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 
     <div class="card inner-card">
-        <h4>Degree Engineering</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible8" class="toggle" type="checkbox">
+            <label for="collapsible8" class="lbl-toggle">Degree Engineering</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 
 
     <div class="card inner-card">
-        <h4>Target Job</h4>
+        <div class="wrap-collapsible">
+            <input id="collapsible9" class="toggle" type="checkbox">
+            <label for="collapsible9" class="lbl-toggle">Target Job</label>
+            <div class="collapsible-content">
+                <div class="content-inner">more info</div>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="card">
     <h3>Squash Course</h3>
 </div>
+
+<script>
+    let myLabels = document.querySelectorAll('.lbl-toggle');
+
+    Array.from(myLabels).forEach(label => {
+        label.addEventListener('keydown', e => {
+            // 32 === spacebar
+            // 13 === enter
+            if (e.which === 32 || e.which === 13) {
+                e.preventDefault();
+                label.click();
+            };
+        });
+    });
+</script>
