@@ -3,7 +3,7 @@
         margin: 50px;
         max-width: 1000px;
         min-height: 50px;
-        width: 60%;
+        width: 50%;
         background-color: whitesmoke;
         box-align: center;
         margin-right: auto;
@@ -19,6 +19,9 @@
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
+    .card>h3 {
+        padding:10px;
+    }
     .inner-card {
         border-radius: 10px 10px;
         margin: 10px;
@@ -43,7 +46,6 @@
 
     .wrap-collabsible {
         border-radius: 10px 10px;
-        margin-bottom: 1.2rem 0;
     }
 
     input[type='checkbox'] {
@@ -53,15 +55,12 @@
     .lbl-toggle {
         font-weight: bolder;
         border-radius: 10px 10px 10px 0;
+        margin-top: 5px;
         padding: 10px;
         display: block;
         cursor: pointer;
         transition: all 0.2s ease-out;
     }
-/* 
-    .lbl-toggle:hover {
-        background-color: #eee;
-    } */
 
     .lbl-toggle::before {
         content: ' ';
@@ -101,15 +100,10 @@
         transform: rotate(90deg) translateX(-3px);
     }
 
-    /* .toggle:checked + .lbl-toggle {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    } */
-
 </style>
 
 <div class="card">
-    <h3>ABC Level</h2>
+    <h3>ABC Level</h3>
     <div class="card inner-card">
         <div class="wrap-collapsible">
             <input id="collapsible" class="toggle" type="checkbox">
